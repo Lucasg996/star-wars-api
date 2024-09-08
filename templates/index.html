@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Movies</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1 id="main-title">Star Wars Movies</h1>
+    <div id="movies">
+        {% for movie in movies %}
+            <div class="movie">
+                <a href="{{ url_for('movie_detail', movie_id=movie.id) }}">
+                    <img src="{{ movie.image }}" alt="{{ movie.title }}">
+                </a>
+                <p id="movie-titles">{{ movie.title }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <footer>
+        <p>&copy; 2024 Star Wars Movies. Todos los derechos reservados.</p>
+        </footer>
+    
+</body>
+</html>

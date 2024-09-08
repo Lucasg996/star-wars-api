@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.title }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>{{ movie.title }}</h1>
+    <img src="/static/images/{{ movie.episode_id }}.jpg" alt="{{ movie.title }}" style="width: 300px; height: auto;">
+    <p><strong>Episode:</strong> {{ movie.episode_id }}</p>
+    <p><strong>Opening Crawl:</strong> {{ movie.opening_crawl }}</p>
+    <p><strong>Director:</strong> {{ movie.director }}</p>
+    <p><strong>Producer:</strong> {{ movie.producer }}</p>
+    <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
+
+    <h2>Characters</h2>
+    <ul>
+        {% for character in characters %}
+            <li>{{ character.name }} ({{ character.gender }}, Year of birth: {{ character.birth_year }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Planets</h2>
+    <ul>
+        {% for planet in planets %}
+            <li>{{ planet.name }} ({{ planet.climate }}, {{ planet.terrain }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Starships</h2>
+    <ul>
+        {% for starship in starships %}
+            <li>{{ starship.name }} ({{ starship.model }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Vehicles</h2>
+    <ul>
+        {% for vehicle in vehicles %}
+            <li>{{ vehicle.name }} ({{ vehicle.model }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Species</h2>
+    <ul>
+        {% for specie in species %}
+            <li>{{ specie.name }} ({{ specie.classification }})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Back to Movies</a>
+    
+</body>
+</html>

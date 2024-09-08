@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'StarJedi';
+    src: url('/static/fonts/starjedi/Starjedi.ttf') format('truetype');
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+/* Estilo para el contenedor de películas */
+#movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Agrega un espacio entre los elementos de la cuadrícula */
+    padding: 10px;
+}
+
+.movie {
+    cursor: pointer;
+    text-align: center;
+}
+
+.movie img {
+    width: 50%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#main-title {
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+
+#main-title:hover {
+    color: #bb9600;
+}
+
+h1, h2 {
+    font-family: 'StarJedi', sans-serif;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+#movie-titles{
+    font-family: 'StarJedi',sans-serif
+}
+
+h1,h2:hover {
+    color: #bb9600;
+}
+
+h2 {
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    color: #fff;
+}
+
+footer {
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    padding: 1px;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+p{
+    margin: 10px;
+    padding: 10px;
+}
