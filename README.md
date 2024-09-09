@@ -13,4 +13,5 @@ FastAPI: Framework para crear la API y manejar el backend.
 HTML/CSS: Para la estructura y el estilo de la interfaz de usuario.
 httpx: Para realizar solicitudes HTTP asincrónicas a la API de Star Wars.
 
-![image](https://github.com/user-attachments/assets/99ddbcbb-901d-48aa-b2ca-efe45d327994)
+![image](https://github.com/user-attachments/assets/154d081c-1d1b-4992-a382-e887dd8450e3)
+
